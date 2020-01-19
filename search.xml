@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>大公司都是985、211吗？</title>
+      <link href="/Linready//blog/2020/01/19/%E5%A4%A7%E5%85%AC%E5%8F%B8%E9%83%BD%E6%98%AF985%E3%80%81211%E5%90%97%EF%BC%9F/"/>
+      <url>/Linready//blog/2020/01/19/%E5%A4%A7%E5%85%AC%E5%8F%B8%E9%83%BD%E6%98%AF985%E3%80%81211%E5%90%97%EF%BC%9F/</url>
+      
+        <content type="html"><![CDATA[<p>今天在知乎上看到这样一个问题：</p><h1 id="阿里，腾讯，华为等公司有专科生吗？"><a href="#阿里，腾讯，华为等公司有专科生吗？" class="headerlink" title="阿里，腾讯，华为等公司有专科生吗？"></a>阿里，腾讯，华为等公司有专科生吗？</h1><h1 id="大公司都是985，211吗？"><a href="#大公司都是985，211吗？" class="headerlink" title="大公司都是985，211吗？"></a>大公司都是985，211吗？</h1><hr><p>而这个问题下面点赞最多的回答是这样说的：</p><p>想起一句话：<br>“当你发现一个学历学校都远不如你的人，和你坐在一个办公室中，你最好不要先急着瞧不起他。”<br>“他要么，有传统教育体系无法衡量的才能，要么，有无需传统教育体系衡量的背景。”<br><strong>“但这任何一样可能都比你的一纸文凭值钱。”</strong></p><p>专科生只是一个帽子，这个帽子决定当别人第一眼看见你的时候，别人对你的评价。</p><p><strong>而至于你到底是一名专科生，还是一名本科生，还是一名研究生</strong><br><strong>得从你说的话，做的事，想的法，干的活来决定。</strong></p><p><strong>专科生中出现出类拔萃的人始终是少数，这是存在的现实。</strong><br><strong>大部分人，都会顶着这一项帽子，自暴自弃地说「这样优秀的人也只是少数」。</strong></p><p><strong>却可能从来没想过，这些少数的人，他们到底做了什么事，说了什么话，想了什么法，又干了什么活。</strong></p><hr><p>作者：叩丁狼教育<br>链接：<a href="https://www.zhihu.com/question/355175394/answer/914262663" target="_blank" rel="noopener">https://www.zhihu.com/question/355175394/answer/914262663</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows如何更改网络位置</title>
+      <link href="/Linready//blog/2020/01/18/Windows%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/"/>
+      <url>/Linready//blog/2020/01/18/Windows%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9%E7%BD%91%E7%BB%9C%E4%BD%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="方法一（以Windows7为例）"><a href="#方法一（以Windows7为例）" class="headerlink" title="方法一（以Windows7为例）"></a>方法一（以Windows7为例）</h1><p> 1.打开网络共享中心，可以右击左下角的网络连接标志<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/1.png" alt><br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/1%EF%BC%882%EF%BC%89.png" alt><br> 2.进入网络与共享中心，找到中间的显示“公用网络”，点击。<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/2.png" alt><br> 3.进入网络设置选择。分别为“家庭网络”、“工作网络“、”公用网络“。选择自己要的网络模式。<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/3.png" alt><br> 4.电脑自动进行配置。<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/4.png" alt><br> 5.配置完成后查看网络与共享中心，会显示配置好的网络方式。<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/5.png" alt></p><hr><h1 id="方法二（以Windows8-1为例）"><a href="#方法二（以Windows8-1为例）" class="headerlink" title="方法二（以Windows8.1为例）"></a>方法二（以Windows8.1为例）</h1><p> 1.按Win + R 打开运行窗口，输入secpol.msc打开本地安全策略<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/6.png" alt><br> 2.点击网络列表管理器策略<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/7.png" alt><br> 3.双击你要修改的网络，点击网络位置选项卡<br> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/8.png" alt><br> 4.选择自己要的网络模式，单击确定</p><h2 id><a href="#" class="headerlink" title=" "></a> <img src="/Linready/blog/2020/01/18/Windows如何更改网络位置/9.png" alt></h2>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>windows下安装JDK</title>
       <link href="/Linready//blog/2020/01/17/windows%E4%B8%8B%E5%AE%89%E8%A3%85JDK/"/>
       <url>/Linready//blog/2020/01/17/windows%E4%B8%8B%E5%AE%89%E8%A3%85JDK/</url>
