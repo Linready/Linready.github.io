@@ -1,574 +1,416 @@
+
 <!DOCTYPE html>
-
-
-
-
-
-<html class="theme-next pisces use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="generator" content="Hexo 3.9.0">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="/Linready/images/apple-touch-icon-next.png?v=7.2.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/Linready/images/favicon-32x32-next.png?v=7.2.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="/Linready/images/favicon-16x16-next.png?v=7.2.0">
-  <link rel="mask-icon" href="/Linready/images/logo.svg?v=7.2.0" color="#222">
-
-<link rel="stylesheet" href="/Linready/css/main.css?v=7.2.0">
-
-
-<link rel="stylesheet" href="/Linready/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/Linready/',
-    scheme: 'Pisces',
-    version: '7.2.0',
-    sidebar: {"position":"left","display":"always","offset":12,"onmobile":false,"b2t":"ture"},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
-    copycode: {"enable":"ture","show_result":"ture","style":null},
-    fancybox: false,
-    mediumzoom: false,
-    lazyload: false,
-    pangu: false,
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    },
-    localsearch: {"enable":"ture","trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    search: {
-      root: '/Linready/',
-      path: 'search.xml'
-    },
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    translation: {
-      copy_button: '复制',
-      copy_success: '复制成功',
-      copy_failure: '复制失败'
-    }
-  };
-</script>
-
-  <meta name="description" content="一、JDK的下载(当前演示版本为jdk 1.8.0_171) 1.下载地址：https://www.oracle.com/technetwork/java/javase/downloads/index.html 2.同意相关协议，再下载对应版本的jdk（windows x64）  二、JDK的安装 1.双击安装 2.下一步安装，在选择路径的时候要注意下（最好有条理，这样方便管理），例如： E:\s">
-<meta name="keywords" content="windows,java">
-<meta property="og:type" content="article">
-<meta property="og:title" content="windows下安装JDK">
-<meta property="og:url" content="https://fenlan_2019.coding.com/blog/2020/01/17/windows下安装JDK/index.html">
-<meta property="og:site_name" content="Candy">
-<meta property="og:description" content="一、JDK的下载(当前演示版本为jdk 1.8.0_171) 1.下载地址：https://www.oracle.com/technetwork/java/javase/downloads/index.html 2.同意相关协议，再下载对应版本的jdk（windows x64）  二、JDK的安装 1.双击安装 2.下一步安装，在选择路径的时候要注意下（最好有条理，这样方便管理），例如： E:\s">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/1.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/3.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/4.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/5.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/6.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/7.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/8.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/9.png">
-<meta property="og:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/10.png">
-<meta property="og:updated_time" content="2020-01-17T04:33:32.633Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="windows下安装JDK">
-<meta name="twitter:description" content="一、JDK的下载(当前演示版本为jdk 1.8.0_171) 1.下载地址：https://www.oracle.com/technetwork/java/javase/downloads/index.html 2.同意相关协议，再下载对应版本的jdk（windows x64）  二、JDK的安装 1.双击安装 2.下一步安装，在选择路径的时候要注意下（最好有条理，这样方便管理），例如： E:\s">
-<meta name="twitter:image" content="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/1.png">
-  <link rel="canonical" href="https://fenlan_2019.coding.com/blog/2020/01/17/windows下安装JDK/">
-
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
-
-  <title>windows下安装JDK | Candy</title>
-  
-
-
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
+<html lang="zh-CN" class="loading">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>windows下安装JDK - Candy</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate">
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="一、JDK的下载(当前演示版本为jdk 1.8.0_171) 1.下载地址：https://www.oracle.com/technetwork/java/javase/downloads/inde,"> 
+    <meta name="author" content="linready"> 
+    <link rel="alternative" href="atom.xml" title="Candy" type="application/atom+xml"> 
+    <link rel="icon" href="/Linready/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/Linready/css/obsidian.css">
+    <link rel="stylesheet" href="/Linready/css/ball-atom.min.css">
 </head>
+</html>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-
-    <div class="custom-logo-site-title">
-      <a href="/Linready/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Candy</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-
-
-<nav class="site-nav">
-    <ul id="menu" class="menu">
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
-      
-    
-
-    <a href="/Linready/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-      
-    
-
-    <a href="/Linready/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>归档</a>
-
-  </li>
-        <li class="menu-item menu-item-search">
-          <a href="javascript:;" class="popup-trigger">
-          
-            <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
-        </li>
-      
-    </ul>
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-    </div>
-</nav>
-
-</div>
-    </header>
-
-    
-
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-            
-
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://fenlan_2019.coding.com/Linready/blog/2020/01/17/windows下安装JDK/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="linready">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/Linready/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Candy">
-    </span>
-      <header class="post-header">
-
-        
-          <h1 class="post-title" itemprop="name headline">windows下安装JDK
-
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-01-17 11:35:27 / 修改时间：12:33:32" itemprop="dateCreated datePublished" datetime="2020-01-17T11:35:27+08:00">2020-01-17</time>
-            </span>
-          
-            
-
-            
-          
-
-          <br/>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span title="本文字数">782</span>
-            </span>
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span title="阅读时长">1 分钟</span>
-            </span>
-          
-
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </header>
+    </div>
+    <span id="config-title" style="display:none">Candy</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://fenlan_2019.coding.com">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">windows下安装JDK</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;"><b>「 </b>文章<b> 」</b></a>
+                
+                一月 17, 2020
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/Linready/blog/2020/01/17/windows下安装JDK/" title="windows下安装JDK">windows下安装JDK</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    2.4k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    2 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready/tags/java/">java</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready/tags/windows/">windows</a></li></ul>
+            
+        </div>
+    </div>
+</div>
 
-      
-        <h1 id="一、JDK的下载-当前演示版本为jdk-1-8-0-171"><a href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171" class="headerlink" title="一、JDK的下载(当前演示版本为jdk 1.8.0_171)"></a>一、JDK的下载(当前演示版本为jdk 1.8.0_171)</h1><p> 1.下载地址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br> 2.同意相关协议，再下载对应版本的jdk（windows x64）</p>
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h1 id="一、JDK的下载-当前演示版本为jdk-1-8-0-171"><a href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171" class="headerlink" title="一、JDK的下载(当前演示版本为jdk 1.8.0_171)"></a>一、JDK的下载(当前演示版本为jdk 1.8.0_171)</h1><p> 1.下载地址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br> 2.同意相关协议，再下载对应版本的jdk（windows x64）</p>
 <h2 id><a href="#" class="headerlink" title=" "></a> <img src="/Linready/blog/2020/01/17/windows下安装JDK/1.png" alt></h2><h1 id="二、JDK的安装"><a href="#二、JDK的安装" class="headerlink" title="二、JDK的安装"></a>二、JDK的安装</h1><p> 1.双击安装<br> 2.下一步安装，在选择路径的时候要注意下（最好有条理，这样方便管理），例如：</p>
-<pre><code>E:\software（自己专门用来放开发、学习软件的文件夹）\Java（对应相应软件）\jdk1.8.0_171（jdk版本）\
-![](2.png)</code></pre><p> 3.安装jre的文件路径也改下，改为  E:\software\Java\jre1.8.0_171\  ,最后安装目录如下所示（很清晰）：</p>
+<pre><code> E:\software（自己专门用来放开发、学习软件的文件夹）\Java（对应相应软件）\jdk1.8.0_171（jdk版本）\
+ ![](2.png)</code></pre><p> 3.安装jre的文件路径也改下，改为  E:\software\Java\jre1.8.0_171\  ,最后安装目录如下所示（很清晰）：</p>
 <h2 id="-1"><a href="#-1" class="headerlink" title=" "></a> <img src="/Linready/blog/2020/01/17/windows下安装JDK/3.png" alt></h2><h1 id="三、配置环境变量"><a href="#三、配置环境变量" class="headerlink" title="三、配置环境变量"></a>三、配置环境变量</h1><p> 1.我的电脑 –&gt; 右键属性  –&gt; 高级系统设置  –&gt; 环境变量<br> <img src="/Linready/blog/2020/01/17/windows下安装JDK/4.png" alt><br> 2.配置如下：<br>  (1) JAVA_HOME =E:\software\Java\jdk1.8.0_171（JDK的根目录）<br>  <img src="/Linready/blog/2020/01/17/windows下安装JDK/5.png" alt><br>  (2) CLASSPAT=.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar<br>  <img src="/Linready/blog/2020/01/17/windows下安装JDK/6.png" alt><br>  (3) Path=%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;<br>  （前两者是新建的，这个是在原有上添加，在最后添加时如果前面没有加分号，当前这条前要加分号）</p>
 <h2 id="-2"><a href="#-2" class="headerlink" title="  "></a>  <img src="/Linready/blog/2020/01/17/windows下安装JDK/7.png" alt></h2><h1 id="四、检验JAVA是否安装成功"><a href="#四、检验JAVA是否安装成功" class="headerlink" title="四、检验JAVA是否安装成功"></a>四、检验JAVA是否安装成功</h1><p> 1.进入cmd中(Win + R  –&gt; 输入cmd – 回车) 或者 （右键开始 –&gt; 输入cmd – 回车）<br> <img src="/Linready/blog/2020/01/17/windows下安装JDK/8.png" alt><br> 2.输入java回车，如图所示<br> <img src="/Linready/blog/2020/01/17/windows下安装JDK/9.png" alt><br> 3.输入javac回车，如图所示</p>
 <h2 id="-3"><a href="#-3" class="headerlink" title=" "></a> <img src="/Linready/blog/2020/01/17/windows下安装JDK/10.png" alt></h2><h1 id="如果以上都没错误，那就成功了，祝你java学习愉快！"><a href="#如果以上都没错误，那就成功了，祝你java学习愉快！" class="headerlink" title="如果以上都没错误，那就成功了，祝你java学习愉快！"></a><strong>如果以上都没错误，那就成功了，祝你java学习愉快！</strong></h1>
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-          
-        
-        <div class="post-tags">
-            <a href="/Linready/tags/windows/" rel="tag"># windows</a>
-          
-            <a href="/Linready/tags/java/" rel="tag"># java</a>
-          
-        </div>
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-              <a href="/Linready/blog/2020/01/16/Vim报错/" rel="next" title="Vim报错">
-                <i class="fa fa-chevron-left"></i> Vim报错
-              </a>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
             
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-              <a href="/Linready/blog/2020/01/18/Windows如何更改网络位置/" rel="prev" title="Windows如何更改网络位置">
-                Windows如何更改网络位置 <i class="fa fa-chevron-right"></i>
-              </a>
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/Linready/statics/chengdu.mp3'></li>
+                
+                    
+            </ul>
             
-          </div>
+            
+            
+    <div id='gitalk-container' class="comment link"
+        data-ae='true'
+        data-ci='ec894e2b66f752e8b7fb'
+        data-cs='3ccc2e92bb350688fe2c2dc2930189b62622bfb1'
+        data-r='blog-comments'
+        data-o='TriDiamond'
+        data-a='TriDiamond'
+        data-d=''
+    >留言</div>
+
+
+            
+            
         </div>
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-  </div>
-
-
-          </div>
-          
-
-
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height=300 width=300></img>
+                    <p>linready</p>
+                    <span>Think like an artist, develop like an artisan</span>
+                    <dl>
+                        <dd><a href="https://github.com/TriDiamond" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://twitter.com/TriDiamond6" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="https://stackoverflow.com/users/7602324/tridiamond?tab=profile" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">9 <p>文章</p></a></li>
+                    <li><a href="/categories">0 <p>分类</p></a></li>
+                    <li><a href="/tags">9 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171"><span class="toc-number">1.</span> <span class="toc-text">一、JDK的下载(当前演示版本为jdk 1.8.0_171)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、JDK的安装"><span class="toc-number">2.</span> <span class="toc-text">二、JDK的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、配置环境变量"><span class="toc-number">3.</span> <span class="toc-text">三、配置环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.1.</span> <span class="toc-text">  </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、检验JAVA是否安装成功"><span class="toc-number">4.</span> <span class="toc-text">四、检验JAVA是否安装成功</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-3"><span class="toc-number">4.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如果以上都没错误，那就成功了，祝你java学习愉快！"><span class="toc-number">5.</span> <span class="toc-text">如果以上都没错误，那就成功了，祝你java学习愉快！</span></a></li></ol>
+                </div>
+            </div>
+            
+            
         </div>
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">linready</p>
-  <div class="site-description motion-element" itemprop="description"></div>
 </div>
-  <nav class="site-state motion-element">
-      <div class="site-state-item site-state-posts">
-        
-          <a href="/Linready/archives/">
-        
-          <span class="site-state-item-count">9</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-    
-      
-      
-      <div class="site-state-item site-state-tags">
-        
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        <span class="site-state-item-count">9</span>
-        <span class="site-state-item-name">标签</span>
-        
-      </div>
-    
-  </nav>
-
-
-
-        </div>
-      </div>
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171"><span class="nav-number">1.</span> <span class="nav-text">一、JDK的下载(当前演示版本为jdk 1.8.0_171)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#null"><span class="nav-number">1.1.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、JDK的安装"><span class="nav-number">2.</span> <span class="nav-text">二、JDK的安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">2.1.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、配置环境变量"><span class="nav-number">3.</span> <span class="nav-text">三、配置环境变量</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#-2"><span class="nav-number">3.1.</span> <span class="nav-text">  </span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、检验JAVA是否安装成功"><span class="nav-number">4.</span> <span class="nav-text">四、检验JAVA是否安装成功</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#-3"><span class="nav-number">4.1.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如果以上都没错误，那就成功了，祝你java学习愉快！"><span class="nav-number">5.</span> <span class="nav-text">如果以上都没错误，那就成功了，祝你java学习愉快！</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; 2019 – <span itemprop="copyrightYear">2020</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">linready</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-area-chart"></i>
-    </span>
-      <span class="post-meta-item-text">站点总字数：</span>
-    
-    <span title="站点总字数">13k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    
-    <span title="站点阅读时长">24 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.2.0</div>
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-      </div>
-
-    
-
-  </div>
-
-  
-  <script src="/Linready/lib/jquery/index.js?v=3.4.1"></script>
-  <script src="/Linready/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  <script src="/Linready/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  <script src="/Linready/js/utils.js?v=7.2.0"></script>
-  <script src="/Linready/js/motion.js?v=7.2.0"></script>
-
-  
-  <script src="/Linready/js/affix.js?v=7.2.0"></script>
-  <script src="/Linready/js/schemes/pisces.js?v=7.2.0"></script>
-
-
-  
-  <script src="/Linready/js/scrollspy.js?v=7.2.0"></script>
-<script src="/Linready/js/post-details.js?v=7.2.0"></script>
-
-
-
-  <script src="/Linready/js/next-boot.js?v=7.2.0"></script>
-
-  
-
-  
-
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="/Linready/js/local-search.js?v=7.2.0"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
 </body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2020
+        <span class="gradient-text">
+            linready
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/Linready/js/plugin.js"></script>
+<script src="/Linready/js/obsidian.js"></script>
+<script src="/Linready/js/jquery.truncate.js"></script>
+<script src="/Linready/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/Linready/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149874671-1');
+    </script>
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
 </html>
