@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>windows下安装JDK - RenZen</title>
+    <title>NTP时间服务器 - RenZen</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="一、JDK的下载(当前演示版本为jdk 1.8.0_171) 1.下载地址：https://www.oracle.com/technetwork/java/javase/downloads/inde,"> 
+    <meta name="description" content="NTP(Network Time Protocol) 网络时间协议，工作在UDP的123端口上。是用来使计算机时间同步化的一种协议，它可以使计算机对其服务器或时钟源（如石英钟，GPS等等)做同步化，,"> 
     <meta name="author" content="linready"> 
     <link rel="alternative" href="atom.xml" title="RenZen" type="application/atom+xml"> 
     <link rel="icon" href="/Linready.github.io/img/favicon.png"> 
@@ -43,7 +43,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://www.renzen.top/Linready.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">windows下安装JDK</h3>
+        <h3 class="subtitle">NTP时间服务器</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -75,22 +75,22 @@
                 
                 <a href="javascript:;"><b>「 </b>文章<b> 」</b></a>
                 
-                一月 17, 2020
+                二月 01, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/Linready.github.io/blog/2020/01/17/windows下安装JDK/" title="windows下安装JDK">windows下安装JDK</a>
+            <h3 class="post-title animated fadeInDown"><a href="/Linready.github.io/blog/2020/02/01/NTP时间服务器/" title="NTP时间服务器">NTP时间服务器</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    2.6k
+                    3.2k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    2 mins.
+                    3 mins.
                 </span>
                 
                 
@@ -103,7 +103,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/java/">java</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/windows/">windows</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/Linux/">Linux</a></li></ul>
             
         </div>
     </div>
@@ -124,13 +124,43 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h1 id="一、JDK的下载-当前演示版本为jdk-1-8-0-171"><a href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171" class="headerlink" title="一、JDK的下载(当前演示版本为jdk 1.8.0_171)"></a>一、JDK的下载(当前演示版本为jdk 1.8.0_171)</h1><p> 1.下载地址：<a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/index.html</a><br> 2.同意相关协议，再下载对应版本的jdk（windows x64）</p>
-<h2 id><a href="#" class="headerlink" title=" "></a> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/1.png" alt></h2><h1 id="二、JDK的安装"><a href="#二、JDK的安装" class="headerlink" title="二、JDK的安装"></a>二、JDK的安装</h1><p> 1.双击安装<br> 2.下一步安装，在选择路径的时候要注意下（最好有条理，这样方便管理），例如：</p>
-<pre><code> E:\software（自己专门用来放开发、学习软件的文件夹）\Java（对应相应软件）\jdk1.8.0_171（jdk版本）\
- ![](2.png)</code></pre><p> 3.安装jre的文件路径也改下，改为  E:\software\Java\jre1.8.0_171\  ,最后安装目录如下所示（很清晰）：</p>
-<h2 id="-1"><a href="#-1" class="headerlink" title=" "></a> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/3.png" alt></h2><h1 id="三、配置环境变量"><a href="#三、配置环境变量" class="headerlink" title="三、配置环境变量"></a>三、配置环境变量</h1><p> 1.我的电脑 –&gt; 右键属性  –&gt; 高级系统设置  –&gt; 环境变量<br> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/4.png" alt><br> 2.配置如下：<br>  (1) JAVA_HOME =E:\software\Java\jdk1.8.0_171（JDK的根目录）<br>  <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/5.png" alt><br>  (2) CLASSPAT=.;%JAVA_HOME%\lib;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar<br>  <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/6.png" alt><br>  (3) Path=%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;<br>  （前两者是新建的，这个是在原有上添加，在最后添加时如果前面没有加分号，当前这条前要加分号）</p>
-<h2 id="-2"><a href="#-2" class="headerlink" title="  "></a>  <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/7.png" alt></h2><h1 id="四、检验JAVA是否安装成功"><a href="#四、检验JAVA是否安装成功" class="headerlink" title="四、检验JAVA是否安装成功"></a>四、检验JAVA是否安装成功</h1><p> 1.进入cmd中(Win + R  –&gt; 输入cmd – 回车) 或者 （右键开始 –&gt; 输入cmd – 回车）<br> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/8.png" alt><br> 2.输入java回车，如图所示<br> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/9.png" alt><br> 3.输入javac回车，如图所示</p>
-<h2 id="-3"><a href="#-3" class="headerlink" title=" "></a> <img src="/Linready.github.io/Linready.github.io/blog/2020/01/17/windows下安装JDK/10.png" alt></h2><h1 id="如果以上都没错误，那就成功了，祝你java学习愉快！"><a href="#如果以上都没错误，那就成功了，祝你java学习愉快！" class="headerlink" title="如果以上都没错误，那就成功了，祝你java学习愉快！"></a><strong>如果以上都没错误，那就成功了，祝你java学习愉快！</strong></h1>
+            <p>NTP(Network Time Protocol) 网络时间协议，工作在UDP的123端口上。是用来使计算机时间同步化的一种协议，它可以使计算机对其服务器或时钟源（如石英钟，GPS等等)做同步化，它可以提供高精准度的时间校正（局域网上与标准间差小于1毫秒，互联网上几十毫秒），且可介由加密确认的方式来防止恶毒的协议攻击。</p>
+<h2 id="NTP服务器"><a href="#NTP服务器" class="headerlink" title="NTP服务器"></a>NTP服务器</h2><p>NTP服务器提供准确时间，首先要有准确的时间来源，这一时间应该是国际标准时间UTC。NTP获得UTC的时间来源可以是原子钟、天文台、卫星，也可以从Internet上获取。这样就有了准确而可靠的时间源。时间按NTP服务器的等级传播。按照离外部UTC 源的远近将所有服务器归入不同的Stratum（层）中。Stratum-1在顶层，有外部UTC接入，而Stratum-2则从Stratum-1获取时间，Stratum-3从Stratum-2获取时间，以此类推，但Stratum层的总数限制在15以内。所有这些服务器在逻辑上形成阶梯式的架构相互连接，而Stratum-1的时间服务器是整个系统的基础。</p>
+<p>计算机主机一般同多个时间服务器连接， 利用统计学的算法过滤来自不同服务器的时间，以选择最佳的路径和来源来校正主机时间。即使主机在长时间无法与某一时间服务器相联系的情况下，NTP服务依然有效运转。为防止对时间服务器的恶意破坏，NTP使用了识别(Authentication)机制，检查来对时的信息是否是真正来自所宣称的服务器并检查资料的返回路径，以提供对抗干扰的保护机制。</p>
+<h2 id="NTP校时方式"><a href="#NTP校时方式" class="headerlink" title="NTP校时方式"></a>NTP校时方式</h2><p>时间服务器可以利用以下三种方式与其他服务器对时：broadcast/multicast，client/server和Symmetric。</p>
+<p>broadcast/multicast:方式主要适用于局域网的环境，时间服务器周期性的以广播的方式，将时间信息传送给其他网路中的时间服务器，其时间仅会有少许的延迟，而且配置非常的简单。但是此方式的精确度并不高，对时间精确度要求不是很高的情况下可以采用。</p>
+<p>Symmetric:的方式得一台服务器可以从远端时间服务器获取时钟，如果需要也可提供时间信息给远端的时间服务器。此一方式适用于配置冗余的时间服务器，可以提供更高的精确度给主机。</p>
+<p>client/server:方式与symmetric方式比较相似，只是不提供给其他时间服务器时间信息，此方式适用于一台时间服务器接收上层时间服务器的时间信息，并提供时间信息给下层的用户。<br><img src="/Linready.github.io/Linready.github.io/blog/2020/02/01/NTP时间服务器/2.png" alt></p>
+<p>上述三种方式，时间信息的传输都使用UDP协议。时间服务器利用一个过滤演算法，及先前八个校时资料计算出时间参考值，判断后续校时包的精确性，一个相对较高的离散程度，表示一个对时资料的可信度比较低。仅从一个时间服务器获得校时信息，不能校正通讯过程所造成的时间偏差，而同时与许多时间服务器通信校时，就可利用过滤算法找出相对较可靠的时间来源，然后采用它的时间来校时</p>
+<h2 id="NTP服务器配置"><a href="#NTP服务器配置" class="headerlink" title="NTP服务器配置"></a>NTP服务器配置</h2><p>NTP在Linux主机上默认一般都是安装过的，只是服务没有启用。如果没有安装可直接使用yum install ntp命令即可。</p>
+<p>NTP的主配置文件，以下是NTP服务器可选的指令：</p>
+<pre><code># 允许172.16.*.*的IP使用该时间服务器;
+restrict 172.16.0.0 mask 255.255.0.0 nomodify
+
+#允许任何人来同步;
+restrict default nomodify notrap
+
+# 屏蔽其他IP过来更新时间;
+restrict 0.0.0.0 mask 0.0.0.0 nomodify notrap noquery notrust 
+#ignore:关闭所有的NTP联机服务;
+#nomodify:表示Client端不能更改Server端的时间参数；不过Client端仍然可以透过Server端来进行网络校时;
+#notrust:该Client除非通过认证否则该Client来源将被视为不信任网域;
+#noquery:不提供Client端的时间查询;
+#notrap:允许任何人来查询;
+
+# 同步的上层服务器（210.72.145.44国家时间服务器）,NTP服务器默认也有同步的时间服务器;
+server 210.72.145.44
+
+# 同步本地时间;
+server 127.127.1.0 prefer
+
+# 本地服务器的stratum大小不能超过16;
+fudge 127.127.1.0 stratum 8</code></pre><h2 id="启动NTP服务器"><a href="#启动NTP服务器" class="headerlink" title="启动NTP服务器"></a>启动NTP服务器</h2><pre><code>[root@localhost ~]# chkconfig ntpd on    
+[root@localhost ~]# service ntpd start</code></pre><h2 id="查看NTP信息"><a href="#查看NTP信息" class="headerlink" title="查看NTP信息"></a>查看NTP信息</h2><pre><code>[root@localhost ~]# ntpq -p</code></pre><p>NTP服务器配置完成启动之后；NTP自身或者与其server的同步需要一个时间段这个过程可能是5-10分钟；在这个时间段内客户端运行ntpdate命令时会产生no serversuitable for synchronization found的错误，上图表示210.72.145.44的reach为0不可用，LOCAL的reach为17可用。</p>
+<h2 id="将时间同步到硬件时钟"><a href="#将时间同步到硬件时钟" class="headerlink" title="将时间同步到硬件时钟"></a>将时间同步到硬件时钟</h2><pre><code>[root@localhost ~]# vi /etc/sysconfig/ntpd    
+SYNC_HWCLOCK=yes</code></pre><h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><pre><code>[root@localhost ~]# ntpdate 172.16.16.1
+[root@localhost ~]# crontab -e    
+*/1 * * * * ntpdate 172.16.16.1</code></pre>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="false">
@@ -188,7 +218,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、JDK的下载-当前演示版本为jdk-1-8-0-171"><span class="toc-number">1.</span> <span class="toc-text">一、JDK的下载(当前演示版本为jdk 1.8.0_171)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-number">1.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、JDK的安装"><span class="toc-number">2.</span> <span class="toc-text">二、JDK的安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-1"><span class="toc-number">2.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、配置环境变量"><span class="toc-number">3.</span> <span class="toc-text">三、配置环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-2"><span class="toc-number">3.1.</span> <span class="toc-text">  </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、检验JAVA是否安装成功"><span class="toc-number">4.</span> <span class="toc-text">四、检验JAVA是否安装成功</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#-3"><span class="toc-number">4.1.</span> <span class="toc-text"> </span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#如果以上都没错误，那就成功了，祝你java学习愉快！"><span class="toc-number">5.</span> <span class="toc-text">如果以上都没错误，那就成功了，祝你java学习愉快！</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#NTP服务器"><span class="toc-number">1.</span> <span class="toc-text">NTP服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NTP校时方式"><span class="toc-number">2.</span> <span class="toc-text">NTP校时方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#NTP服务器配置"><span class="toc-number">3.</span> <span class="toc-text">NTP服务器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#启动NTP服务器"><span class="toc-number">4.</span> <span class="toc-text">启动NTP服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查看NTP信息"><span class="toc-number">5.</span> <span class="toc-text">查看NTP信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将时间同步到硬件时钟"><span class="toc-number">6.</span> <span class="toc-text">将时间同步到硬件时钟</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端配置"><span class="toc-number">7.</span> <span class="toc-text">客户端配置</span></a></li></ol>
                 </div>
             </div>
             
