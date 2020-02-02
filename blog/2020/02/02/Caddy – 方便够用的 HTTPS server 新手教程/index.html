@@ -128,7 +128,7 @@
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>用过 golang 的应该都知道，golang 程序基本上不会有各种依赖，都是光秃秃一个可执行程序，cp 到 <code>/usr/local/bin</code>就算安装完成了，所以说安装 caddy 是很简单的，我给出三种方法。</p>
 <h3 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h3><pre><code>curl -s https://getcaddy.com | bash</code></pre><p>caddy 官方给出了一个安装脚本，执行上面的命令就可以一键安装 caddy，等执行结束后，使用 <code>which caddy</code>，可以看到 caddy 已经被安装到了 <code>/usr/local/bin/caddy</code></p>
 <h3 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h3><p><a href="https://caddyserver.com/download" target="_blank" rel="noopener">https://caddyserver.com/download</a> 点这个链接进入到 caddy 官网的下载界面，网页左侧可以选择平台和插件，如果在 Linux 服务器上使用的话，platform 选择 Linux 64-bit 就可以了，plugins 如果暂时不需要的话，可以不选。然后点击下面的 DOWNLOAD 按钮，就下载到 caddy 了。同理，解压之后用 cp 命令放到 <code>/usr/local/bin/caddy</code> 就完成了安装。</p>
-<p><img src="/Linready.github.io/Linready.github.io/blog/2020/02/02/Caddy – 方便够用的 HTTPS server 新手教程/2.png" alt></p>
+<p><img src="/Linready.github.io/Linready.github.io/blog/2020/02/02/Caddy – 方便够用的 HTTPS server 新手教程/2.jpg" alt></p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="临时文件服务器"><a href="#临时文件服务器" class="headerlink" title="临时文件服务器"></a>临时文件服务器</h3><p>Caddy 的配置文件叫做 <code>Caddyfile</code>，Caddy 不强制你把配置文件放到哪个特定文件夹，默认情况下，把 Caddyfile 放到当前目录就可以跑起来了，如下：</p>
 <pre><code>echo &#39;localhost:8888&#39; &gt;&gt; Caddyfile
 echo &#39;gzip&#39; &gt;&gt; Caddyfile
