@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tag: 杂谈 - RenZen</title>
+    <title>C语言学习路线 - RenZen</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    
+    <meta name="description" content="1 入门篇1.什么时计算机语言
+2.C语言的程序的结构
+3.运行C语言的步骤与方法
+4.了解简单的算法
+5.怎么表示算法
+6.结构化程序设计的方法
+2 提高篇1.顺序程序设计
+2.数据的表现形式
+3,"> 
     <meta name="author" content="linready"> 
     <link rel="alternative" href="atom.xml" title="RenZen" type="application/atom+xml"> 
     <link rel="icon" href="/Linready.github.io/img/favicon.png"> 
@@ -36,131 +44,77 @@
     </div>
     <span id="config-title" style="display:none">RenZen</span>
     <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/Linready.github.io/whoami/" title="ABOUT">ABOUT</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/Linready.github.io/categories/" title="CATEGORIES">CATEGORIES</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/Linready.github.io/tags/" title="TAGS">TAGS</a>
-        </li>
-        
-        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/Linready.github.io/archives/" title="ARCHIVES">ARCHIVES</a>
-        </li>
-        
-    </ul>
-    <p class="copyright" id="copyright">
-        &copy; 2020 linready.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
-    </p>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://www.renzen.top/Linready.github.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">C语言学习路线</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div id="container">
-    
-<div class="search-box">
-    <form class="site-search-form">
-        <span class="iconfont icon-search"></span>
-        <input type="text" id="local-search-input" class="st-search-input" />
-        <div class="iconfont icon-cross search-box-close"></div>
-    </form>
-    <div class="search-scrollable">
-        <div id="local-search-result" class="local-search-result-cls" data-initialise="首次搜索，正在载入索引文件，请稍后……"
-            data-start="输入关键词搜索。" data-empty="没有找到内容，请尝试更换检索词。">
-            <span>输入关键词搜索。</span>
-        </div>
-    </div>
-</div>
-<div id="header">
-    <div>
-        <div class="logo animated fadeInDown">
-            <img src="/img/favicon.png" alt="">
-            <a class="image-logo" href="/"></a>
-        </div>
-        <ul id="menu-menu" class="menu text-menu">
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/Linready.github.io/whoami/" title="ABOUT" class="menu-link">ABOUT</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/Linready.github.io/categories/" title="CATEGORIES" class="menu-link">CATEGORIES</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/Linready.github.io/tags/" title="TAGS" class="menu-link">TAGS</a>
-            </li>
-            
-            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
-                <a href="/Linready.github.io/archives/" title="ARCHIVES" class="menu-link">ARCHIVES</a>
-            </li>
-            
-            
-            <li class="animated fadeInDown search-bar iconfont icon-search"></li>
-            
-        </ul>
-        <div class="iconfont icon-menu switchmenu gradient-text animated fadeInDown"></div>
-    </div>
-</div>
-<div id="screen">
-    <div id="mark">
-        <div class="cover animated fadeIn" style="
-            animation-delay: 900ms;
-            animation-duration: 2.8s;
-            background-image:
-                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
                 url(/img/cover.jpg);">
         </div>
-    </div>
-    
-    <div id="post0" class="else">
-        <p class="animated fadeInDown">
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;"><b>「 </b>文章<b> 」</b></a>
+                
+                二月 02, 2020
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/Linready.github.io/blog/2020/02/02/C语言学习路线/" title="C语言学习路线">C语言学习路线</a>
+            </h3>
             
-            <a href="javascript:;"><b>「 </b>文章<b> 」</b></a>
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                    1.3k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                    1 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
             
-            一月 19, 2020
-        </p>
-        <h3 class="post-title animated fadeInDown">
-            <a href="/Linready.github.io/blog/2020/01/19/大公司都是985、211吗？/" title="大公司都是985、211吗？" class="posttitle">大公司都是985、211吗？</a></h3>
-        
-        <p class="post-count animated fadeInDown">
             
-            <span>
-                <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                998
-            </span>
+            <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/C语言/">C语言</a></li></ul>
             
-            
-            <span>
-                <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                1 mins.
-            </span>
-            
-            
-        </p>
-        
-        
-        <ul class="animated fadeInDown post-tags-list"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/博客/">博客</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/Linready.github.io/tags/杂谈/">杂谈</a></li></ul>
-        
-        <div class="md-content animated fadeIn">
-            
-            <p>今天在知乎上看到这样一个问题：</p>
-<hr>
-<p>而这个问题下面点赞最多的回答是这样说的：</p>
-<p>想起一句话：<br>“当你发现一个学历学校都远不如你的人，和你坐在一个办公室中，你最好不要先急着瞧不起他。”<br>“他要么，有传统教育体系...</p>
-            
-            <span class="read-more"><a href="/Linready.github.io/blog/2020/01/19/大公司都是985、211吗？/" title="查看全文" class="posttitle">查看全文</a>
-                <b class="iconfont icon-arrow-right- gradient-text"></b></span>
         </div>
     </div>
-    
 </div>
 
 <div class="screen-gradient-after">
@@ -168,21 +122,120 @@
         <div class="screen-gradient-content-inside">
             <div class="bold-underline-links screen-gradient-sponsor">
                 <p>
-                    <span class="typed-text"></span>
+                    <span class="animated fadeIn delay-1s"></span>
                 </p>
             </div>
         </div>
     </div>
 </div>
 
-    <div id="primary">
-        
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h2 id="1-入门篇"><a href="#1-入门篇" class="headerlink" title="1 入门篇"></a>1 入门篇</h2><p>1.什么时计算机语言</p>
+<p>2.C语言的程序的结构</p>
+<p>3.运行C语言的步骤与方法</p>
+<p>4.了解简单的算法</p>
+<p>5.怎么表示算法</p>
+<p>6.结构化程序设计的方法</p>
+<h2 id="2-提高篇"><a href="#2-提高篇" class="headerlink" title="2 提高篇"></a>2 提高篇</h2><p>1.顺序程序设计</p>
+<p>2.数据的表现形式</p>
+<p>3.C语言的输入输出</p>
+<p>4.选择结构和条件判断</p>
+<p>5.if、switch语句的使用</p>
+<p>6.关系运算符与表达式</p>
+<p>7.逻辑运算符与表达式</p>
+<p>8.条件运算符与表达式</p>
+<p>9.循环结构程序设计</p>
+<p>10.while循环语句</p>
+<p>11.do…while循环语句</p>
+<p>12.for循环语句</p>
+<p>13.循环的嵌套和比较</p>
+<p>14.break和continue语句</p>
+<h2 id="3-强化篇"><a href="#3-强化篇" class="headerlink" title="3 强化篇"></a>3 强化篇</h2><p>1.怎么定义和引用一维数组</p>
+<p>2.怎么定义和引用二维数组</p>
+<p>3.多维数组和字符数组</p>
+<p>4.怎么定义函数</p>
+<p>5.函数的调用</p>
+<p>6.数组作为函数参数</p>
+<p>7.局部和全局变量</p>
+<p>8.内部和外部函数</p>
+<p>9.变量的存储方式和生存期</p>
+<h2 id="4-深入篇"><a href="#4-深入篇" class="headerlink" title="4 深入篇"></a>4 深入篇</h2><p>1.指针是什么</p>
+<p>2.指针变量</p>
+<p>3.通过指针引用数组</p>
+<p>4.通过指针引用字符串</p>
+<p>5.指向函数的指针</p>
+<p>6返回指针值得函数</p>
+<p>7.指针数组和多重指针</p>
+<p>8.动态内存分配与指向它的指针变量</p>
+<h2 id="5-升华篇"><a href="#5-升华篇" class="headerlink" title="5 升华篇"></a>5 升华篇</h2><p>1.定义和使用结构体变量</p>
+<p>2.使用结构体数组</p>
+<p>3.结构体指针</p>
+<p>4.用指针处理链表</p>
+<p>5.共用体、枚举类型</p>
+<p>6.typedef声明新类型名</p>
+<p>7.C文件的有关知识</p>
+<p>8.打开与关闭文件</p>
+<p>9.顺序读写数据文件</p>
+<p>10.随机读写数据文件</p>
+<p>11.文件读写的出错检测</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/Linready.github.io/statics/Forever Away.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height=300 width=300></img>
+                    <p>linready</p>
+                    <span>Think like an artist, develop like an artisan</span>
+                    <dl>
+                        <dd><a href="https://github.com/TriDiamond" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://twitter.com/TriDiamond6" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="https://stackoverflow.com/users/7602324/tridiamond?tab=profile" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">12 <p>文章</p></a></li>
+                    <li><a href="/categories">0 <p>分类</p></a></li>
+                    <li><a href="/tags">10 <p>标签</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>目录</h4>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-入门篇"><span class="toc-number">1.</span> <span class="toc-text">1 入门篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-提高篇"><span class="toc-number">2.</span> <span class="toc-text">2 提高篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-强化篇"><span class="toc-number">3.</span> <span class="toc-text">3 强化篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-深入篇"><span class="toc-number">4.</span> <span class="toc-text">4 深入篇</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-升华篇"><span class="toc-number">5.</span> <span class="toc-text">5 升华篇</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
     </div>
-    
 </div>
-<div id="preview"></div>
 
-
+    </div>
+</div>
     <div id="back-to-top" class="animated fadeIn faster">
         <div class="flow"></div>
         <span class="percentage animated fadeIn faster">0%</span>
