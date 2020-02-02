@@ -84,13 +84,13 @@
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    7k
+                    7.3k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    6 mins.
+                    7 mins.
                 </span>
                 
                 
@@ -129,6 +129,7 @@
 <h3 id="脚本安装"><a href="#脚本安装" class="headerlink" title="脚本安装"></a>脚本安装</h3><pre><code>curl -s https://getcaddy.com | bash</code></pre><p>caddy 官方给出了一个安装脚本，执行上面的命令就可以一键安装 caddy，等执行结束后，使用 <code>which caddy</code>，可以看到 caddy 已经被安装到了 <code>/usr/local/bin/caddy</code></p>
 <h3 id="手动安装"><a href="#手动安装" class="headerlink" title="手动安装"></a>手动安装</h3><p><a href="https://caddyserver.com/download" target="_blank" rel="noopener">https://caddyserver.com/download</a> 点这个链接进入到 caddy 官网的下载界面，网页左侧可以选择平台和插件，如果在 Linux 服务器上使用的话，platform 选择 Linux 64-bit 就可以了，plugins 如果暂时不需要的话，可以不选。然后点击下面的 DOWNLOAD 按钮，就下载到 caddy 了。同理，解压之后用 cp 命令放到 <code>/usr/local/bin/caddy</code> 就完成了安装。</p>
 <p><img src="/Linready.github.io/Linready.github.io/blog/2020/02/02/Caddy – 方便够用的 HTTPS server 新手教程/2.jpg" alt></p>
+<h3 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h3><pre><code>go get github.com/mholt/caddy/caddy</code></pre><p>对于安装了 golang 编译器的同学，只需要执行 go get 就能到 $GOPATH/bin 里，是否 cp 到 <code>/usr/local/bin</code> 里就看心情了。使用源码安装可以安装到最新版本的 caddy，功能上一般是最新的，而且因为是本地编译，性能可能会稍微高一些，但是可能会存在不稳定的现象。</p>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="临时文件服务器"><a href="#临时文件服务器" class="headerlink" title="临时文件服务器"></a>临时文件服务器</h3><p>Caddy 的配置文件叫做 <code>Caddyfile</code>，Caddy 不强制你把配置文件放到哪个特定文件夹，默认情况下，把 Caddyfile 放到当前目录就可以跑起来了，如下：</p>
 <pre><code>echo &#39;localhost:8888&#39; &gt;&gt; Caddyfile
 echo &#39;gzip&#39; &gt;&gt; Caddyfile
@@ -261,7 +262,7 @@ redir / https://railgun.moe/{uri} 301
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本安装"><span class="toc-number">1.1.</span> <span class="toc-text">脚本安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#手动安装"><span class="toc-number">1.2.</span> <span class="toc-text">手动安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">2.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#临时文件服务器"><span class="toc-number">2.1.</span> <span class="toc-text">临时文件服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生产环境使用"><span class="toc-number">2.2.</span> <span class="toc-text">生产环境使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caddyfile"><span class="toc-number">3.</span> <span class="toc-text">Caddyfile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Caddyfile的格式"><span class="toc-number">3.1.</span> <span class="toc-text">Caddyfile的格式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-number">4.</span> <span class="toc-text">指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多HOST网站"><span class="toc-number">5.</span> <span class="toc-text">多HOST网站</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">1.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#脚本安装"><span class="toc-number">1.1.</span> <span class="toc-text">脚本安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#手动安装"><span class="toc-number">1.2.</span> <span class="toc-text">手动安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#源码安装"><span class="toc-number">1.3.</span> <span class="toc-text">源码安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">2.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#临时文件服务器"><span class="toc-number">2.1.</span> <span class="toc-text">临时文件服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生产环境使用"><span class="toc-number">2.2.</span> <span class="toc-text">生产环境使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caddyfile"><span class="toc-number">3.</span> <span class="toc-text">Caddyfile</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Caddyfile的格式"><span class="toc-number">3.1.</span> <span class="toc-text">Caddyfile的格式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指令"><span class="toc-number">4.</span> <span class="toc-text">指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多HOST网站"><span class="toc-number">5.</span> <span class="toc-text">多HOST网站</span></a></li></ol>
                 </div>
             </div>
             
